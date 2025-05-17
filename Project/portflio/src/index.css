@@ -1,0 +1,79 @@
+@import "tailwindcss";
+:root{
+  --colourbg:#000000;
+  --btn:#ea445a;
+  --secondary:#74f0ed;
+  --text:#ffffff;
+  --home:(#060606);
+}
+@layer base{
+  ::selection{
+    background: var(--secondary);
+    color: var(--colourbg);
+  }
+}
+
+@tailwind utilities;
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(1, 1, 15);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7bb1b9;
+}
+
+@layer utilities {
+  .btn-wave {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .btn-wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: url('https://wweb.dev/resources/creative-hover-effects/wave.svg') repeat-x;
+    background-size: 200% 100%;
+    background-color: var(--secondary);
+    animation: none;
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+
+  .btn-wave:hover::before {
+    animation: waveFill 4s linear infinite;
+    left: 0;
+  }
+
+  @keyframes waveFill {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 200%;
+    }
+  }
+}
+
+
+
