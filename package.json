@@ -1,5 +1,5 @@
 {
-  "homepage": "http://smartthug.github.io/portflio",
+  "homepage": "http://smartthug.github.io/Portflio",
   "name": "portflio",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predepoly":"npm run build",
-    "depoly":"gh-pages -d dist"
+     
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.3",
