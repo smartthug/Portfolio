@@ -22,7 +22,7 @@ const Projects = () => {
           className="w-full h-60 bg-stone-800 px-20 rounded-2xl relative"
           onClick={() => setProject1(true)}
         >
-          <div className="w-2xl rounded-tl-2xl rounded-tr-2xl  h-40   bg-[url('./projectpic/car.jpg')] bg-cover bg-center absolute   bottom-0 left-1/2 transform -translate-x-1/2"></div>
+          <div className="w-2xl rounded-tl-2xl rounded-tr-2xl  h-40   bg-[url('/projectpic/car.jpg')] bg-cover bg-center absolute   bottom-0 left-1/2 transform -translate-x-1/2"></div>
         </div>
         <div className="flex justify-between items-center my-2">
           <h1 className="text-3xl font-bold md:text-4xl sm:text-3xl">
@@ -49,7 +49,7 @@ const Projects = () => {
 
       <div >
         <div className="w-full h-60 rounded-2xl bg-stone-800 relative" onClick={() => setProject(true)}>
-           <div className="w-2xl rounded-tl-2xl rounded-tr-2xl  h-40   bg-[url('./projectpic/signup.jpg')] bg-cover bg-top absolute  bottom-0 left-1/2 transform -translate-x-1/2"></div>
+           <div className="w-2xl rounded-tl-2xl rounded-tr-2xl  h-40   bg-[url('/projectpic/signup.jpg')] bg-cover bg-top absolute  bottom-0 left-1/2 transform -translate-x-1/2"></div>
         </div>
         <div className="flex justify-between items-center my-2 ">
           <h1 className="text-3xl font-bold md:text-4xl sm:text-3xl">Login-Signup</h1>
@@ -82,7 +82,7 @@ const Projects = () => {
             >
               &times;
             </button>
-            <div className="w-full h-81 rounded-tl-xl rounded-tr-2xl bg-[url('./projectpic/signup.jpg')] bg-cover bg-top"></div>
+            <div className="w-full h-81 rounded-tl-xl rounded-tr-2xl bg-[url('/projectpic/signup.jpg')] bg-cover bg-top"></div>
             <h2 className="text-2xl font-bold mb-2 md:text-3xl">Login-Signup</h2>
             <p className="text-[var(--secondary)] mb-3">
               React.js - Node.js - Express - MongoDB
@@ -120,7 +120,7 @@ const Projects = () => {
             >
               &times;
             </button>
-            <div className="w-full h-81 rounded-tl-xl rounded-tr-2xl bg-[url('public/projectpic/car.jpg')] bg-cover bg-center object-fill"></div>
+            <div className="w-full h-81 rounded-tl-xl rounded-tr-2xl bg-[url('/projectpic/car.jpg')] bg-cover bg-center object-fill"></div>
             <h2 className="text-2xl font-bold mb-2 md:text-3xl">
               Dual-Mode Intelligent Headlamp Control System
             </h2>
