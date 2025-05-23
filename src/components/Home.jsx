@@ -9,7 +9,7 @@ const Home = () => {
       className="w-full h-auto relative mt-16 px-6  md:px-20 overflow-hidden flex flex-col md:flex-row items-center justify-between "
     >
       {/* Left Side: Intro Text */}
-      <div className="z-10 max-w-3xl text-center md:text-left">
+      <div className="z-10 max-w-3xl text-center md:text-left pt-20">
         <h1 className="text-4xl md:text-7xl font-extrabold text-white leading-tight">
           Hi, I&apos;m Rahul<span className="text-[var(--btn)]">.</span>
         </h1>

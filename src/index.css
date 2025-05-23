@@ -20,6 +20,10 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body.noscroll {
+  overflow: hidden;
 }
 
 /* Track */

@@ -2,8 +2,8 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 const SideNav = () => {
   return (
     <div >
-      <nav className='w-15 h-full fixed left-0 bg-gray-900 z-30 flex sm:hidden lg:block '>
-        <ul className='flex flex-col gap-30 justify-evenly  items-center p-5 text-2xl md:text-lg md:gap-30 '>  
+      <nav className='w-15 h-full fixed left-0 bg-gray-900 z-30 flex sm:hidden lg:block md:hidden '>
+        <ul className='flex flex-col gap-8 justify-evenly  items-center p-5 text-2xl   '>  
             <li><a href="#home" className='hover:text-blue-300'  style={{writingMode:'vertical-rl'}}>Home</a></li>
             <li><a href="#about"  className='hover:text-blue-300'style={{writingMode:'vertical-rl'}}>About</a></li>
             <li><a href="#exper" className='hover:text-blue-300' style={{writingMode:'vertical-rl'}}>Experience</a></li>
