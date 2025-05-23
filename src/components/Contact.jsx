@@ -16,7 +16,7 @@ const Contact = () => {
           Contact Me<span className="text-[var(--secondary)]">.</span>
         </h3>
 
-        <p className="text-gray-300 mb-6 text-xl md:text-2xl z-10 relative">
+        <p className="text-gray-300 mb-6 text-2xl md:text-3xl z-10 relative">
           Let&apos;s connect and build something great! You can also find me on{" "}
           <a
             href="https://www.linkedin.com/in/rahuldeva5"
