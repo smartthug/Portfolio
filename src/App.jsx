@@ -11,7 +11,7 @@ import Exper from './components/Exper';
 
 function App() {
   return (
-    <div className="  bg-[var(--colourbg)] text-white font-sans cursor-crosshair overflow-x-hidden">
+    <div className="  bg-[var(--colourbg)] text-white font-sans cursor-crosshair overflow-hidden">
       <SideNav/>
       <Navbar />
       <Home />

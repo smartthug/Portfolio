@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full h-auto relative mt-16 px-6  md:px-20 overflow-hidden flex flex-col md:flex-row items-center justify-between "
+      className="w-full h-auto relative mt-16 px-6   md:px-20 overflow-hidden flex flex-col md:flex-row items-center justify-between "
     >
       {/* Left Side: Intro Text */}
       <div className="z-10 max-w-3xl text-center md:text-left pt-20">
@@ -15,11 +15,12 @@ const Home = () => {
         </h1>
 
         <p className="text-xl md:text-4xl text-gray-300 mt-4 font-medium">
-          I&apos;m a <span className="text-[var(--secondary)] font-bold">MERN Developer</span> — React.js & Tailwind CSS
+          I&apos;m a <span className="text-[var(--secondary)] font-bold">FullStack Dev</span> | MERN Stack | Fast Learner, Real-World Builder
         </p>
 
         <p className="text-base md:text-2xl my-6 font-light text-gray-400">
-          I build clean, responsive UIs and love transforming ideas into interactive experiences. Always learning, always improving.
+          Turning ideas into full-stack web apps using React, Node, and MongoDB.
+Quick learner, clean coder, always building something cool.
         </p>
 
         {/* Magnetic Button */}
