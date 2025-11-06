@@ -79,5 +79,83 @@ body.noscroll {
   }
 }
 
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 8px var(--btn), 0 0 16px var(--btn);
+  }
+  50% {
+    box-shadow: 0 0 18px var(--btn), 0 0 30px var(--btn);
+  }
+  100% {
+    box-shadow: 0 0 8px var(--btn), 0 0 16px var(--btn);
+  }
+}
+.hero-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: radial-gradient(circle at 80% 50%, rgba(0, 255, 255, 0.1), transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+section#about {
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(15, 15, 15, 0.95), rgba(5, 5, 5, 0.98));
+}
+#projects {
+  background: linear-gradient(to bottom right, rgba(10, 10, 10, 0.95), rgba(0, 0, 0, 0.98));
+}
+
+@keyframes bg-wave {
+  0% {
+    transform: scale(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.group-hover\:animate-bg-wave {
+  animation: bg-wave 1.2s ease-out forwards;
+}
+
+.hero-light-streak {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,255,255,0.4), transparent);
+  animation: lightMove 4s infinite ease-in-out;
+  opacity: 0.5;
+}
+
+@keyframes lightMove {
+  0%, 100% {
+    transform: translateX(-20%);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(20%);
+    opacity: 0.6;
+  }
+}
+
+.glow-ring {
+  animation: glowPulse 2s infinite ease-in-out;
+  background-color: rgba(0, 255, 255, 0.05);
+  border: 1px solid var(--btn);
+  border-radius: 50%;
+}
+
+
 
 
